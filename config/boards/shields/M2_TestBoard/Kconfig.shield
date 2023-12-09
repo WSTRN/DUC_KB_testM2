@@ -1,0 +1,2 @@
+config SHIELD_M2_TESTBOARD
+    def_bool $(shields_list_contains,M2_TestBoard)

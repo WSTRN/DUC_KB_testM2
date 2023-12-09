@@ -1,0 +1,9 @@
+#include "Lele69.dtsi"
+
+&left_encoder {
+    status = "okay";
+};
+
+
+    
+
