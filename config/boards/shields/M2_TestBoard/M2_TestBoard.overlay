@@ -1,4 +1,4 @@
-#include "Lele69.dtsi"
+#include "M2_TestBoard.dtsi"
 
 &left_encoder {
     status = "okay";
