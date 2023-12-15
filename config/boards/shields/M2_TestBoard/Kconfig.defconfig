@@ -14,12 +14,15 @@ CONFIG_ZMK_RGB_UNDERGLOW=y
 CONFIG_WS2812_STRIP=y
 
 if ZMK_DISPLAY
-config I2C
-	default y
-config SSD1306
-	default y
+# config I2C
+# 	default y
+# config SSD1306
+# 	default y
 
-config SSD1306_REVERSE_MODE
+# config SSD1306_REVERSE_MODE
+# 	default y
+
+config LPM009M360A
 	default y
 
 endif # ZMK_DISPLAY
@@ -46,4 +49,4 @@ endif # LVGL
 config ZMK_WIDGET_WPM_STATUS
 	default y
 
-
+CONFIG_LOG=y

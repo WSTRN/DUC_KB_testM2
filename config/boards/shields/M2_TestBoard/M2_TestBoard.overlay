@@ -4,6 +4,20 @@
     status = "okay";
 };
 
-
+&spi2 {
+	cs-gpios = <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	status = "okay";
+	lcd0: lcd@0 {
+		compatible = "jdi,lpm009m360a";
+		reg = <0>;
+		status = "okay";
+		spi-max-frequency = <4000000>;
+		disp_gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
+		extcomin_gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+		width = <72>;
+		height = <144>;
+        color_mode = [02];
+	};
+};
     
 
