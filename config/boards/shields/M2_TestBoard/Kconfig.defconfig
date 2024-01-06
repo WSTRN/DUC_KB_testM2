@@ -49,4 +49,4 @@ endif # LVGL
 config ZMK_WIDGET_WPM_STATUS
 	default y
 
-CONFIG_LOG=y
+

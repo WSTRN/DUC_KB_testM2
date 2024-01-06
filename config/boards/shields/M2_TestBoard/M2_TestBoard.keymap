@@ -33,7 +33,7 @@ bindings = <
 	&kp RET &kp RET &kp RET &kp RET &kp RET &kp RET &kp RET &kp RET
 	&kp RET &kp RET &kp RET &kp RET &kp RET &kp RET &kp RET &kp RET
 >;
-sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+// sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
     };
