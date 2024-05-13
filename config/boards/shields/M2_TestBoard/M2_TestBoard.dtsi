@@ -74,8 +74,6 @@
 			, <&gpio0 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
     };
@@ -91,6 +89,16 @@
 	//     compatible = "zmk,keymap-sensors";
 	//     sensors = <&left_encoder>;
 	// };
+	pwmleds {
+		compatible = "pwm-leds";
+			// pwm0 Ch 0 
+			pwm_led0: pwm_led_0 {
+				pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+			};
+      		pwm_led1: pwm_led_1 {
+				pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_INVERTED>;
+			};
+	};
 };
 
 // &i2c0 {
